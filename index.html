@@ -1,24 +1,271 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 22.5: Taller de Implementación Final</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 22.5: Taller de Implementación Final</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes perfeccionen los detalles finales de su modelo 3D rediseñado.</li>
+                                        <li>Que apliquen técnicas avanzadas aprendidas durante el curso para mejorar la calidad de su trabajo.</li>
+                                        <li>Que preparen su modelo para ser una pieza de portafolio de alta calidad.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>La versión más pulida y profesional del proyecto del estudiante, lista para ser presentada en un portafolio.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Onshape y Xolo están listos para la sesión final del curso.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Estar preparado para guiar a los estudiantes en consultas técnicas muy específicas y fomentar una mentalidad de "atención al detalle".</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un ejemplo de un modelo "antes y después" del pulido, mostrando cómo pequeños detalles (como un fillet de radio variable) pueden elevar la calidad percibida del producto.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el taller de los perfeccionistas, enfocado en el pulido final para crear una pieza de portafolio.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la sesión como el paso del prototipo funcional al producto "terminado".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, finalistas. Han completado el rediseño. El producto es funcional. Pero en el diseño profesional, hay un último paso: el pulido. Es la diferencia entre un prototipo y un producto que se siente 'terminado'. Hoy es un taller para los perfeccionistas. Es tiempo para refinar cada curva y cada unión hasta que estén orgullosos de firmarlo como una pieza de su portafolio.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su última sesión con Xolo: 'Hola Xolo, listo para la Misión 22.5', seguido de su nombre, perfil y gustos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar el concepto de calidad de portafolio y el objetivo de refinar, no de añadir nuevas funciones.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Refinamiento de Portafolio y el Objetivo ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador explica la importancia de la calidad del trabajo y el objetivo de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Un portafolio es su carta de presentación como diseñadores; muestra la calidad de su trabajo. Hoy tendrán tiempo para enfocarse en esa calidad. ¿Hay algún borde que pueda ser más suave? ¿Pueden añadir un pequeño detalle que eleve el diseño? El objetivo no es añadir nuevas funciones, sino refinar las existentes. Usen todo su arsenal de técnicas para que, al final, tengan un modelo 3D del que se sientan verdaderamente orgullosos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje final del curso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de este taller final es alcanzar la maestría. Al final, podrán decir: <strong>'Yo he utilizado tiempo de taller para refinar y perfeccionar mi modelo 3D, aplicando técnicas avanzadas para crear una pieza de calidad de portafolio.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Consultoría de Refinamiento) ⏰ 2 minutos</h2>
+                <p>Fase de diálogo breve donde Xolo se posiciona como un consultor experto para preguntas específicas de refinamiento.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Xolo en Modo Consultor Experto ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador transmite el mensaje de Xolo, que fomenta el criterio y la consulta específica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Un mensaje rápido de Xolo antes del taller: "Mi rol hoy es el de un consultor de diseño al que pueden acudir con preguntas muy específicas de refinamiento. No hay un plan guiado. Ustedes son los directores de su propio proceso de calidad. Usen su criterio para identificar áreas de mejora y consulten al AI Advisor o a mí para las dudas técnicas más sutiles."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Taller de Perfeccionamiento) ⏰ 30 minutos</h2>
+                <p>Fase de trabajo de producción enfocado en la autoevaluación, la aplicación de técnicas avanzadas y la preparación visual del modelo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Autoevaluación, Refinamiento y Presentación ⏰ 30 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los estudiantes ejecutan el ciclo completo de perfeccionamiento para portafolio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Tienen 30 minutos. **Fase 1: Autoevaluación Crítica.** Abran su modelo y examínenlo con ojo crítico. Creen una pequeña lista de "mejoras de pulido". **Fase 2: Ejecución del Refinamiento Avanzado.** Aborden su lista, usando consultas avanzadas al Advisor si es necesario. Apliquen técnicas como 'Boundary Fill' o fillets de radio variable. Añadan detalles finales como su logo. **Fase 3: Preparación para la Presentación.** Preparen una vista isométrica limpia y ajusten la apariencia visual de las piezas para que sea atractiva. El objetivo es un modelo final pulido y profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Galería de Portafolios" y el cierre formal del curso por parte de Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador guía una reflexión sobre el detalle técnico del que se sientan más orgullosos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su pieza de portafolio. Reflexionen: <strong>¿Cuál es el detalle o refinamiento específico del que se sienten más orgullosos y por qué?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Galería de Portafolios Silenciosa y Compartir ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Se realiza una galería silenciosa y algunos voluntarios comparten su orgullo técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Realizaremos una "galería silenciosa". Todos pongan en pantalla la vista final de su proyecto. Dedicaremos un minuto a observar el trabajo de los demás. (Tras la pausa) Ahora, algún voluntario que quiera compartir ese detalle específico del que se siente particularmente orgulloso, como "Logré que esta curva fuera perfectamente tangente usando una restricción G2..."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Cierre Final del Curso por Xolo ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador lee el mensaje de cierre final de Xolo, concluyendo el curso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Para cerrar el curso, Xolo les deja este mensaje final: "Observen el trabajo. Vean de dónde partieron y dónde están ahora. Han completado el viaje de consumidor a director, de seguir instrucciones a crear y ejecutar sus propios planes. Han colaborado con la IA como socios, no como operadores. Las habilidades técnicas que han aprendido son importantes, pero la mentalidad de análisis, estrategia, planificación y curación que han desarrollado es lo que verdaderamente los define como los creadores del futuro. El viaje no termina aquí. Es solo el comienzo. Sigan curiosos, sigan creando y sigan dirigiendo. El futuro es suyo para diseñar."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
